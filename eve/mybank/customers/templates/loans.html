@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <h1>Loan Department</h1>
+
+        <b>Disbursals</b>: 
+        <br>
+
+        <table>
+            <th>
+                <tr>
+                <td>Name</td>
+                <td>Amount</td>
+                </tr>
+            </th>
+        {% for name, amt in disbursals %}
+        <tr>
+        <td>{{ name }}</td>
+        <td>{{ amt }}</td>
+        </tr>
+        {% endfor %}
+        </table>
+        
+        <b>Recoveries</b>: 
+        <br>
+
+        {% for name, amt in recoveries %}
+        {{ name }}, {{ amt }} <br>
+        {% endfor %}
+
+    </body>
+</html>

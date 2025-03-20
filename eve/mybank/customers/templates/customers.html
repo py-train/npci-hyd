@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h1>Customers</h1>
+
+        <table>
+            <th>
+                <tr>
+                <td>Name</td>
+                <td>ID</td>
+                <td>Sex</td>
+                </tr>
+            </th>
+        {% for cust in cust_data %}
+        <tr>
+        <td>{{ cust.name }}</td>
+        <td>{{ cust.id }}</td>
+        <td>{{ cust.sex }}</td>
+        </tr>
+        {% endfor %}
+        </table>
+
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h1>Customer Data</h1>
+
+        <table>
+            <th>
+                <tr>
+                    <td>Name</td>
+                    <td>Account Number</td>
+                    <td>Balance</td>
+                </tr>
+            </th>
+            {% for customer in cust_data %}
+            <tr>
+                <td>{{ customer.name }}</td>
+                <td>{{ customer.acnum }}</td>
+                <td>{{ customer.balance }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
